@@ -1,3 +1,13 @@
+/* COLORS */
+:root{
+  --white-color:#FFFFFFBF;
+  --orange-color:#FF7E1B;
+  --light-orang:#FFAB6A;
+  --dark-color:#1D2026;
+  --grey-color:#69707D;
+  --light-grey:#B6BCC8;
+}
+
 /* GLOBAL */
 html {
     box-sizing: border-box;
