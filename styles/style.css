@@ -27,7 +27,7 @@ body {
     height: 100%;
     padding: 0;
     margin: 0;
-    font-family: "Arial", sans-serif;
+    font-family: "Kumbh Sans", "Arial", sans-serif;
     font-size: 16px;
     line-height: 1.5;
     background-color: #fff;
@@ -60,3 +60,50 @@ ul{
 .main-content {
     flex-grow: 1;
     }
+
+/* HEADER CONTENT */
+.header {
+  padding-top: 28px;
+}
+.header-container {
+  padding-bottom: 34px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #E4E9F2;
+}
+.site-logo-link {
+  margin-right: 57px;
+  display: block;
+}
+.site-logo {
+  display: block;
+}
+.navigation{
+  margin-right: auto;
+}
+.nav-list {
+  display: flex;
+}
+.nav-list__item {
+}
+.nav-list__item:not(:last-child){
+  margin-right: 32px;
+}
+.nav-list__link {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  color: var(--grey-color);
+}
+.site-cart-wrapper {
+  margin-right: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.site-cart-icon {
+  display: block;
+  color: var(--grey-color);
+}
+.login-img {
+}
