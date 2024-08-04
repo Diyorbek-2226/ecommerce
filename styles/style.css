@@ -172,6 +172,10 @@ ul {
   margin-bottom: 16px;
 }
 .site-header__cart-modal{
+  display: none;
+}
+.site-header__cart-modal--open{
+  display: block;
   position: absolute;
   right: -76px;
   top: 76px;
@@ -259,8 +263,11 @@ ul {
   text-overflow: ellipsis;
   overflow: hidden;
   text-transform: capitalize;
+  color: var(--grey-color);
 }
-
+.item-shopping-cart-products__cost{
+  color: var(--grey-color);
+}
 .item-shopping-cart-products__subtotal {
   color: var(--dark-color);
 }
@@ -270,10 +277,9 @@ ul {
   padding: 0;
   background-color: transparent;
   align-self: center;
-  color: #c3cad9;
+  color: #C3CAD9;
   cursor: pointer;
 }
-
 .item-shopping-cart-products__remove-button:hover {
   color: var(--dark-color);
 }
