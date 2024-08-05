@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,7 @@
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
     <!-- HEADER CONTENT -->
     <header class="header">
@@ -44,7 +46,12 @@
                 <div class="site-cart-wrapper">
                     <a class="site-cart__link js-site-cart-link" href="#" aria-label="Shopping cart">
                         <span class="site-cart__product-count">3</span>
-                        <svg class="site-cart__img" width="22" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.863 3.641h17.062c.583 0 1.01.55.87 1.114l-1.822 7.283a.896.896 0 0 1-.817.677l-14.321.842c.256.598.849 1.01 1.53 1.01h10.008a2.72 2.72 0 0 1 2.717 2.716A2.72 2.72 0 0 1 16.373 20c-1.878 0-3.197-1.872-2.555-3.642H8.913C9.556 18.13 8.233 20 6.358 20 4.1 20 2.83 17.385 4.22 15.611c-.77-.61-1.218-1.508-1.29-2.336l-.98-10.909v.001c.072.796.169 1.876-.051-.575H.896A.896.896 0 0 1 .896 0h1.82c.465 0 .852.354.894.816l.253 2.825Zm1.57 13.642a.926.926 0 0 0 1.85 0 .926.926 0 0 0-1.85 0Zm10.94.925a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm-11.78-6.432 13.801-.811 1.383-5.531H4.024l.57 6.342Z" fill="currentColor" aria-hidden="true"/></svg>
+                        <svg class="site-cart__img" width="22" height="20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.863 3.641h17.062c.583 0 1.01.55.87 1.114l-1.822 7.283a.896.896 0 0 1-.817.677l-14.321.842c.256.598.849 1.01 1.53 1.01h10.008a2.72 2.72 0 0 1 2.717 2.716A2.72 2.72 0 0 1 16.373 20c-1.878 0-3.197-1.872-2.555-3.642H8.913C9.556 18.13 8.233 20 6.358 20 4.1 20 2.83 17.385 4.22 15.611c-.77-.61-1.218-1.508-1.29-2.336l-.98-10.909v.001c.072.796.169 1.876-.051-.575H.896A.896.896 0 0 1 .896 0h1.82c.465 0 .852.354.894.816l.253 2.825Zm1.57 13.642a.926.926 0 0 0 1.85 0 .926.926 0 0 0-1.85 0Zm10.94.925a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm-11.78-6.432 13.801-.811 1.383-5.531H4.024l.57 6.342Z"
+                                fill="currentColor" aria-hidden="true" />
+                        </svg>
                     </a>
                     <div class="site-header__cart-modal js-site-header-cart-modal">
                         <section class="shopping-cart shopping-cart--modal">
@@ -59,13 +66,31 @@
                                     <ul class="shopping-cart__products shopping-cart-products">
                                         <li class="shopping-cart-products__item">
                                             <div class="item-shopping-cart-products">
-                                                <img class="item-shopping-cart-products__img" src="./images/first-img.jpg" alt="Fall limited edition sneakers" width="50px" height="50px" >
+                                                <img class="item-shopping-cart-products__img"
+                                                    src="./images/first-img.jpg" alt="Fall limited edition sneakers"
+                                                    width="50px" height="50px">
                                                 <div class="item-shopping-cart-products__info">
-                                                    <div class="item-shopping-cart-products__name">Fall Limited Edition Sneakers</div>
-                                                    <div class="item-shopping-cart-products__cost">$125.00 x 3 <b class="item-shopping-cart-products__subtotal">$375.00</b></div>
+                                                    <div class="item-shopping-cart-products__name">Fall Limited Edition
+                                                        Sneakers</div>
+                                                    <div class="item-shopping-cart-products__cost">$125.00 x 3 <b
+                                                            class="item-shopping-cart-products__subtotal">$375.00</b>
+                                                    </div>
                                                 </div>
-                                                <button class="item-shopping-cart-products__remove-button" type="button" aria-label="Remove item">
-                                                    <svg width="14" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.625V1.75C0 1.334.334 1 .75 1h3.5l.294-.584A.741.741 0 0 1 5.213 0h3.571a.75.75 0 0 1 .672.416L9.75 1h3.5c.416 0 .75.334.75.75v.875a.376.376 0 0 1-.375.375H.375A.376.376 0 0 1 0 2.625Zm13 1.75V14.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 1 14.5V4.375C1 4.169 1.169 4 1.375 4h11.25c.206 0 .375.169.375.375ZM4 6c.275 0 .5.225.5.5v7c0 .275-.225.5-.5.5a.501.501 0 0 1-.5-.5v-7c0-.275.225-.5.5-.5Zm3.5.5c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7ZM10 6c.275 0 .5.225.5.5v7c0 .275-.225.5-.5.5a.501.501 0 0 1-.5-.5v-7c0-.275.225-.5.5-.5Z" fill="currentColor"/><mask id="a" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="14" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.625V1.75C0 1.334.334 1 .75 1h3.5l.294-.584A.741.741 0 0 1 5.213 0h3.571a.75.75 0 0 1 .672.416L9.75 1h3.5c.416 0 .75.334.75.75v.875a.376.376 0 0 1-.375.375H.375A.376.376 0 0 1 0 2.625Zm13 1.75V14.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 1 14.5V4.375C1 4.169 1.169 4 1.375 4h11.25c.206 0 .375.169.375.375ZM4 6c.275 0 .5.225.5.5v7c0 .275-.225.5-.5.5a.501.501 0 0 1-.5-.5v-7c0-.275.225-.5.5-.5Zm3.5.5c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7ZM10 6c.275 0 .5.225.5.5v7c0 .275-.225.5-.5.5a.501.501 0 0 1-.5-.5v-7c0-.275.225-.5.5-.5Z" fill="currentColor"/></mask></svg>
+                                                <button class="item-shopping-cart-products__remove-button" type="button"
+                                                    aria-label="Remove item">
+                                                    <svg width="14" height="16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M0 2.625V1.75C0 1.334.334 1 .75 1h3.5l.294-.584A.741.741 0 0 1 5.213 0h3.571a.75.75 0 0 1 .672.416L9.75 1h3.5c.416 0 .75.334.75.75v.875a.376.376 0 0 1-.375.375H.375A.376.376 0 0 1 0 2.625Zm13 1.75V14.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 1 14.5V4.375C1 4.169 1.169 4 1.375 4h11.25c.206 0 .375.169.375.375ZM4 6c.275 0 .5.225.5.5v7c0 .275-.225.5-.5.5a.501.501 0 0 1-.5-.5v-7c0-.275.225-.5.5-.5Zm3.5.5c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7ZM10 6c.275 0 .5.225.5.5v7c0 .275-.225.5-.5.5a.501.501 0 0 1-.5-.5v-7c0-.275.225-.5.5-.5Z"
+                                                            fill="currentColor" />
+                                                        <mask id="a" style="mask-type:luminance"
+                                                            maskUnits="userSpaceOnUse" x="0" y="0" width="14"
+                                                            height="16">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M0 2.625V1.75C0 1.334.334 1 .75 1h3.5l.294-.584A.741.741 0 0 1 5.213 0h3.571a.75.75 0 0 1 .672.416L9.75 1h3.5c.416 0 .75.334.75.75v.875a.376.376 0 0 1-.375.375H.375A.376.376 0 0 1 0 2.625Zm13 1.75V14.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 1 14.5V4.375C1 4.169 1.169 4 1.375 4h11.25c.206 0 .375.169.375.375ZM4 6c.275 0 .5.225.5.5v7c0 .275-.225.5-.5.5a.501.501 0 0 1-.5-.5v-7c0-.275.225-.5.5-.5Zm3.5.5c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7ZM10 6c.275 0 .5.225.5.5v7c0 .275-.225.5-.5.5a.501.501 0 0 1-.5-.5v-7c0-.275.225-.5.5-.5Z"
+                                                                fill="currentColor" />
+                                                        </mask>
+                                                    </svg>
                                                 </button>
                                             </div>
                                         </li>
@@ -78,13 +103,14 @@
                                 </div>
                             </div>
                         </section>
-                        
+
                     </div>
                 </div>
                 <!-- Login User link -->
                 <div class="login-user__wrapper">
                     <a class="login-user__link" href="#">
-                        <img class="login-user__img" src="./images/user-img.jpg" alt="login-img" width="50px" height="50px">
+                        <img class="login-user__img" src="./images/user-img.jpg" alt="login-img" width="50px"
+                            height="50px">
                     </a>
                 </div>
             </div>
@@ -100,17 +126,102 @@
                 <div class="product-page__galery">
                     <div class="img-showcase">
                         <div class="img-showcase__showcase">
-                            <img class="img-showcase__active-img" src="./images/sneacers1.jpg" alt="Fall Limited Edition Sneakers" width="445px" height="445px" srcset="./images/sneacers1.jpg 1x, ./images/sneacers1@2x.jpg 2x">
+                            <img class="img-showcase__active-img" src="./images/sneacers1.jpg"
+                                alt="Fall Limited Edition Sneakers" width="445px" height="445px"
+                                srcset="./images/sneacers1.jpg 1x, ./images/sneacers1@2x.jpg 2x">
                         </div>
+                        <!-- Showcase thubnails -->
+                        <ul class="img-showcase__thumbnails">
+
+                            <li class="img-showcase__thumbnail img-showcase__thumbnail--active">
+                                <button class="img-showcase__thumbnail-button js-img-showcase-thumbnail-button"
+                                    type="button" aria-label="Image 1" data-img-showcase-big="img/sneakers-1.jpg"
+                                    data-img-showcase-retina="img/sneakers-1@2x.jpg">
+                                    <img class="img-showcase__thumnail-img" src="./images/sneacers-thubnail1.jpg"
+                                        alt="Sneakers 1" width="88" height="88"
+                                        srcset="./images/sneacers-thubnail1.jpg 1x, ./images/sneacers-thubnail1@2x.jpg 2x">
+                                </button>
+                            </li>
+
+                            <li class="img-showcase__thumbnail">
+                                <button class="img-showcase__thumbnail-button js-img-showcase-thumbnail-button"
+                                    type="button" aria-label="Image 2" data-img-showcase-big="img/sneakers-2.jpg"
+                                    data-img-showcase-retina="img/sneakers-2@2x.jpg">
+                                    <img class="img-showcase__thumnail-img" src="./images/sneacers-thubnail2.jpg"
+                                        alt="Sneakers 2" width="88" height="88"
+                                        srcset="./images/sneacers-thubnail2.jpg 1x, ./images/sneacers-thubnail2@2x.jpg 2x">
+                                </button>
+                            </li>
+
+                            <li class="img-showcase__thumbnail">
+                                <button class="img-showcase__thumbnail-button js-img-showcase-thumbnail-button"
+                                    type="button" aria-label="Image 3" data-img-showcase-big="img/sneakers-3.jpg"
+                                    data-img-showcase-retina="img/sneakers-3@2x.jpg">
+                                    <img class="img-showcase__thumnail-img" src="./images/sneacers-thubnail3.jpg"
+                                        alt="Sneakers 3" width="88" height="88"
+                                        srcset="./images/sneacers-thubnail3.jpg 1x, ./images/sneacers-thubnail3@2x.jpg 2x">
+                                </button>
+                            </li>
+
+                            <li class="img-showcase__thumbnail">
+                                <button class="img-showcase__thumbnail-button js-img-showcase-thumbnail-button"
+                                    type="button" aria-label="Image 4" data-img-showcase-big="img/sneakers-4.jpg"
+                                    data-img-showcase-retina="img/sneakers-4@2x.jpg">
+                                    <img class="img-showcase__thumnail-img" src="./images/sneacers-thubnail4.jpg"
+                                        alt="Sneakers 4" width="88" height="88"
+                                        srcset="./images/sneacers-thubnail4.jpg 1x, ./images/sneacers-thubnail4@2x.jpg 2x">
+                                </button>
+                            </li>
+
+                        </ul>
                     </div>
                 </div>
 
+
                 <!-- Product Page Info -->
-                <div class="product-page__info">Info</div>
+                <div class="product-page__info">
+                    <div class="product-info">
+                        <div class="product-info__manufacturer">Sneaker Company</div>
+                        <h1 class="product-info__title">Fall Limited Edition Sneakers</h1>
+                        <p class="product-info__description">These low-profile sneakers are your perfect casual wear
+                            companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather
+                            can offer.</p>
+                        <div class="product-info__price-wrapper">
+                            <b class="product-info__price">$125.00</b>
+                            <span class="badge">50%</span>
+                        </div>
+                        <del class="product-info__old-price">$250.00</del>
+
+                        <div class="product-info__cart-actions">
+                            <div class="product-info__quantity-wrapper">
+                                <button class="product-info__quantity-button js-product-quantity-decrement-button"
+                                    type="button" aria-label="Remove 1">-</button>
+                                <div class="product-info__quantity">0</div>
+                                <button class="product-info__quantity-button js-product-quantity-increment-button"
+                                    type="button" aria-label="Add 1">+</button>
+                            </div>
+
+                            <button class="button button--wide" type="button">
+                                <span class="button__inner">
+                                    <span class="button__prepend">
+                                        <svg class="button__icon" width="22" height="20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M3.863 3.641h17.062c.583 0 1.01.55.87 1.114l-1.822 7.283a.896.896 0 0 1-.817.677l-14.321.842c.256.598.849 1.01 1.53 1.01h10.008a2.72 2.72 0 0 1 2.717 2.716A2.72 2.72 0 0 1 16.373 20c-1.878 0-3.197-1.872-2.555-3.642H8.913C9.556 18.13 8.233 20 6.358 20 4.1 20 2.83 17.385 4.22 15.611c-.77-.61-1.218-1.508-1.29-2.336l-.98-10.909v.001c.072.796.169 1.876-.051-.575H.896A.896.896 0 0 1 .896 0h1.82c.465 0 .852.354.894.816l.253 2.825Zm1.57 13.642a.926.926 0 0 0 1.85 0 .926.926 0 0 0-1.85 0Zm10.94.925a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm-11.78-6.432 13.801-.811 1.383-5.531H4.024l.57 6.342Z"
+                                                fill="currentColor" />
+                                        </svg>
+                                    </span>
+                                    <span class="button__text">Add to cart</span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 
     <script src="./js/main.js"></script>
 </body>
+
 </html>
