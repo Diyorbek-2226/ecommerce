@@ -447,8 +447,8 @@ ul {
   color: var(--dark-color);
 }
 .button__inner {
-  padding-left: 76px;
-  padding-right: 76px;
+  padding-left: 74px;
+  padding-right: 74px;
 }
 .button__prepend {
   margin-right: 16px;
