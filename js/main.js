@@ -40,3 +40,20 @@ elsImgShowcaseThumbnailButton.forEach(function (elButton) {
     });
 });
 
+// Lightbox
+// LIGHTBOX
+const elLightbox = document.querySelector('.lightbox');
+const elLightboxToggler = document.querySelector('.js-lightbox-toggler');
+const elLightboxClose = document.querySelector('.js-lightbox-close');
+
+if (elLightboxToggler) {
+    elLightboxToggler.addEventListener('click', function () {
+        elLightbox.classList.add(modifiers.lightboxOpen);
+    });
+}
+
+if (elLightboxClose) {
+    elLightboxClose.addEventListener('click', function () {
+        elLightbox.classList.remove(modifiers.lightboxOpen);
+    });
+}
