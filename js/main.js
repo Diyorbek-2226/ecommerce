@@ -57,3 +57,25 @@ if (elLightboxClose) {
         elLightbox.classList.remove(modifiers.lightboxOpen);
     });
 }
+
+// Lightbox showcase
+const elImgLightboxActiveImg = elLightbox.querySelector('.img-showcase__active-img');
+const elsImgLightboxThumbnailButton = elLightbox.querySelectorAll('.js-img-lightbox-thumbnail-button');
+const elsLightboxImgThumbnail = elLightbox.querySelectorAll('.img-showcase__thumbnail');
+
+
+elsImgLightboxThumbnailButton.forEach(function (elButton) {
+    elButton.addEventListener('click', function () {
+        // Remove active state from all buttons
+        elsLightboxImgThumbnail.forEach(function (elImgThumbnail) {
+            elImgThumbnail.classList.remove(modifiers.imgThumbnailActive);
+        });
+
+        // Add active state to clicked button
+        elButton.parentElement.classList.add(modifiers.imgThumbnailActive);
+
+        // Update active image src accordingly
+        elImgLightboxActiveImg.src = elButton.dataset.imgShowcaseBig;
+        elImgLightboxActiveImg.srcset = `${elButton.dataset.imgShowcaseBig} 1x, ${elButton.dataset.imgShowcaseRetina} 2x`;
+    });
+});
