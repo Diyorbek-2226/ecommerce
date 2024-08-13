@@ -79,3 +79,55 @@ elsImgLightboxThumbnailButton.forEach(function (elButton) {
         elImgLightboxActiveImg.srcset = `${elButton.dataset.imgShowcaseBig} 1x, ${elButton.dataset.imgShowcaseRetina} 2x`;
     });
 });
+
+// Lightbox control
+const elLightboxControlPrev = elLightbox.querySelector('.js-lightbox-control-prev');
+const elLightboxControlNext = elLightbox.querySelector('.js-lightbox-control-next');
+
+if (elLightboxControlNext) {
+    elLightboxControlNext.addEventListener('click', function () {
+        // Find active li element
+        const elActiveItem = elLightbox.querySelector('.img-showcase__thumbnail--active');
+
+        // Remove active li element's styles
+        elActiveItem.classList.remove(modifiers.imgThumbnailActive);
+
+        let elNextActiveItem;
+
+        if (elActiveItem.nextElementSibling === null) {
+            elNextActiveItem = elsLightboxImgThumbnail[0];
+        } else {
+            elNextActiveItem = elActiveItem.nextElementSibling;
+        }
+
+        elNextActiveItem.classList.add(modifiers.imgThumbnailActive);
+
+        // Update active image src accordingly
+        elImgLightboxActiveImg.src = elNextActiveItem.children[0].dataset.imgShowcaseBig;
+        elImgLightboxActiveImg.srcset = `${elNextActiveItem.children[0].dataset.imgShowcaseBig} 1x, ${elNextActiveItem.children[0].dataset.imgShowcaseRetina} 2x`;
+    });
+}
+
+if (elLightboxControlPrev) {
+    elLightboxControlPrev.addEventListener('click', function () {
+        // Find active li element
+        const elActiveItem = elLightbox.querySelector('.img-showcase__thumbnail--active');
+
+        // Remove active li element's styles
+        elActiveItem.classList.remove(modifiers.imgThumbnailActive);
+
+        let elNextActiveItem;
+
+        if (elActiveItem.previousElementSibling === null) {
+            elNextActiveItem = elsLightboxImgThumbnail[elsLightboxImgThumbnail.length - 1];
+        } else {
+            elNextActiveItem = elActiveItem.previousElementSibling;
+        }
+
+        elNextActiveItem.classList.add(modifiers.imgThumbnailActive);
+
+        // Update active image src accordingly
+        elImgLightboxActiveImg.src = elNextActiveItem.children[0].dataset.imgShowcaseBig;
+        elImgLightboxActiveImg.srcset = `${elNextActiveItem.children[0].dataset.imgShowcaseBig} 1x, ${elNextActiveItem.children[0].dataset.imgShowcaseRetina} 2x`;
+    });
+}
